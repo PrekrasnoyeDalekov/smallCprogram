@@ -1,0 +1,31 @@
+{
+    "breakpoints": [
+        {
+            "breakpoint_type": 0,
+            "condition": "",
+            "enabled": true,
+            "filename": "QUEUE.h",
+            "line": 8,
+            "timestamp": "1730511017029"
+        },
+        {
+            "breakpoint_type": 0,
+            "condition": "",
+            "enabled": true,
+            "filename": "BANK_SIMULATION.h",
+            "line": 6,
+            "timestamp": "1730623114950"
+        },
+        {
+            "breakpoint_type": 0,
+            "condition": "",
+            "enabled": true,
+            "filename": "QUEUE.h",
+            "line": 3,
+            "timestamp": "1730623286336"
+        }
+    ],
+    "timestamp": "1731330320288",
+    "watchvars": [
+    ]
+}

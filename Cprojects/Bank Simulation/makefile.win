@@ -1,0 +1,47 @@
+# Project: Bank Simulation
+# Makefile created by Red Panda C++ 2.25.1
+
+CPP      = g++.exe
+CC       = gcc.exe
+WINDRES  = windres.exe
+RES      = Bank_Simulation_private.res
+OBJ      = Link.o main.o Que.o info_display.o bank_simulation.o $(RES)
+LINKOBJ  = Link.o main.o Que.o info_display.o bank_simulation.o Bank_Simulation_private.res
+CLEANOBJ  =  Link.o main.o Que.o info_display.o bank_simulation.o  Bank_Simulation_private.res "Bank Simulation.exe"
+LIBS     = 
+INCS     =  
+CXXINCS  =  
+BIN      = "Bank Simulation.exe"
+CXXFLAGS = $(CXXINCS)  -pedantic -O2
+CFLAGS   = $(INCS)  -std=c99 -pedantic -O2
+RM       = del /q /f
+WINDRESFLAGS  = 
+
+.PHONY: all all-before all-after clean clean-custom
+
+all: all-before $(BIN) all-after
+
+clean: clean-custom
+	-$(RM) $(CLEANOBJ) > NUL 2>&1
+
+$(BIN): $(OBJ)
+	$(CPP) $(LINKOBJ) -o $(BIN) $(LIBS)
+
+Link.o: Link.cpp LINK.h
+	$(CPP) -c Link.cpp -o Link.o $(CXXFLAGS)  -finput-charset=UTF-8 -fexec-charset=gbk
+
+main.o: main.cpp INFO_DISPLAY.h LINK.h BANK_SIMULATION.h QUEUE.h
+	$(CPP) -c main.cpp -o main.o $(CXXFLAGS)  -finput-charset=UTF-8 -fexec-charset=gbk
+
+Que.o: Que.cpp QUEUE.h
+	$(CPP) -c Que.cpp -o Que.o $(CXXFLAGS)  -finput-charset=UTF-8 -fexec-charset=gbk
+
+info_display.o: info_display.cpp INFO_DISPLAY.h
+	$(CPP) -c info_display.cpp -o info_display.o $(CXXFLAGS)  -finput-charset=UTF-8 -fexec-charset=gbk
+
+bank_simulation.o: bank_simulation.cpp INFO_DISPLAY.h LINK.h BANK_SIMULATION.h QUEUE.h
+	$(CPP) -c bank_simulation.cpp -o bank_simulation.o $(CXXFLAGS)  -finput-charset=UTF-8 -fexec-charset=gbk
+
+Bank_Simulation_private.res: Bank_Simulation_private.rc 
+	$(WINDRES) -i Bank_Simulation_private.rc --input-format=rc -o Bank_Simulation_private.res -O coff $(WINDRESFLAGS) 
+

@@ -1,0 +1,83 @@
+[
+    {
+        "caretX": 7,
+        "caretY": 26,
+        "filename": "E:/文档/test_projects_C/Bank Simulation/LINK.h",
+        "focused": false,
+        "isOpen": false,
+        "leftChar": 1,
+        "topLine": 1
+    },
+    {
+        "caretX": 14,
+        "caretY": 11,
+        "filename": "E:/文档/test_projects_C/Bank Simulation/INFO_DISPLAY.h",
+        "focused": false,
+        "isOpen": false,
+        "leftChar": 1,
+        "topLine": 1
+    },
+    {
+        "caretX": 101,
+        "caretY": 21,
+        "filename": "E:/文档/test_projects_C/Bank Simulation/info_display.cpp",
+        "focused": false,
+        "isOpen": false,
+        "leftChar": 1,
+        "topLine": 1
+    },
+    {
+        "caretX": 13,
+        "caretY": 31,
+        "filename": "E:/文档/test_projects_C/Bank Simulation/Link.cpp",
+        "focused": false,
+        "isOpen": false,
+        "leftChar": 1,
+        "topLine": 1
+    },
+    {
+        "caretX": 1,
+        "caretY": 60,
+        "filename": "E:/文档/test_projects_C/Bank Simulation/bank_simulation.cpp",
+        "focused": false,
+        "isOpen": false,
+        "leftChar": 1,
+        "topLine": 53
+    },
+    {
+        "caretX": 7,
+        "caretY": 7,
+        "filename": "E:/文档/test_projects_C/Bank Simulation/QUEUE.h",
+        "focused": false,
+        "isOpen": false,
+        "leftChar": 1,
+        "topLine": 1
+    },
+    {
+        "caretX": 1,
+        "caretY": 46,
+        "filename": "E:/文档/test_projects_C/Bank Simulation/Que.cpp",
+        "focused": false,
+        "isOpen": false,
+        "leftChar": 1,
+        "topLine": 1
+    },
+    {
+        "caretX": 1,
+        "caretY": 18,
+        "filename": "E:/文档/test_projects_C/Bank Simulation/main.cpp",
+        "focused": false,
+        "isOpen": false,
+        "leftChar": 1,
+        "topLine": 10
+    },
+    {
+        "caretX": 18,
+        "caretY": 9,
+        "filename": "E:/文档/test_projects_C/Bank Simulation/BANK_SIMULATION.h",
+        "focused": false,
+        "isOpen": false,
+        "leftChar": 1,
+        "topLine": 1
+    }
+]
