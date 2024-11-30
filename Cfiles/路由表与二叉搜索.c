@@ -22,7 +22,7 @@ void createRIB(FILE *fin,struct biTnode *root){
 	unsigned int iport;
 	while(fgets(buff,30,fin)){
 		if(sscanf(buff,"%hhu.%hhu.%hhu.%hhu/%hhu %u",&byte1,&byte2,&byte3,&byte4,&mask,&iport)==6){
-			printf("%s",buff);
+			printf("SUBNET:%3hhu.%3hhu.%3hhu.%3hhu\tMASK:/%2hhu\tPORT:%u\n",byte1,byte2,byte3,byte4,mask,iport);
 			struct biTnode *current_ptr = root;
 			unsigned int ip=(byte1<<24) | (byte2<<16) | (byte3<<8) | byte4; // 变成4字节int 类型
 			unsigned char iLorR=0;
@@ -39,10 +39,11 @@ void createRIB(FILE *fin,struct biTnode *root){
 			}
 			current_ptr->iPort = iport;
 		}
+		else printf("Invalid IP!\n");
 		memset(buff,0,sizeof(buff));
 	}
 	fclose(fin);
-	printf("RIB created successfully!\n");
+	printf("\nRIB Created Successfully!\n");
 	
 }
 
@@ -107,7 +108,7 @@ int main(){
 	
 	/*MODE2: GET INPUTS FROM STDIN*/ 
 	char buff[30];
-	for(printf("Please Enter IP:（Invalid IP to quit)\n");fgets(buff,sizeof(buff),stdin)&&getNextHop(buff,root)!=-1;printf("%d\n",getNextHop(buff,root)),memset(buff,0,sizeof(buff)));
+	for(printf("Please Enter IP(Invalid IP to quit):\n");fgets(buff,sizeof(buff),stdin)&&getNextHop(buff,root)!=-1;printf("The Output Port is: %d\n",getNextHop(buff,root)),memset(buff,0,sizeof(buff)));
 	
 
 	return 0;
